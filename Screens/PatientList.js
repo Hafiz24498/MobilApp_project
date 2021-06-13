@@ -7,7 +7,17 @@ import { database } from '../firebaseDB';
 
 const PatientList = ({navigation}) =>{
     
-    const [user, setUser] = useState();
+    const [user, setUser] = useState([]);
+
+    const DeletePatient = item => {
+        try{
+            database().ref('user/' + item.Id)
+            .remove()
+            .then(() => {})
+        } catch(error) {
+            alert(error);
+        }
+    }
 
     useEffect(() => {
         const userRef=database().ref('/user');
@@ -26,9 +36,26 @@ const PatientList = ({navigation}) =>{
             <ScrollView>
                 
                   {user.map((item, index) =>(
-                      <ListItem>
-                          <Text>{item.Name}</Text>
-                          <Text>{item.Disease}</Text>
+                      <ListItem bottomDivider
+                        onPress={() => {
+                            navigation.navigate('PatientDetailsScreen',item.Id)
+                            //alert(item.Id);
+                        }}
+                        >
+                          <Badge value={index+1} />
+                          <ListItem.Content>
+                          {/* <Text>{item.Name}</Text>
+                          <Text>{item.Disease}</Text> */}
+                          <ListItem.Title>
+                              {item.Name}
+                          </ListItem.Title>
+                          <ListItem.Subtitle>{item.Disease}</ListItem.Subtitle>
+                          
+                      </ListItem.Content>
+                      <Button transparent onPress={() => DeletePatient(item)}>
+                            <Icon active name="trash" color="red"/>
+                        </Button>
+                      <ListItem.Chevron />
                       </ListItem>
                   ))}  
                 
