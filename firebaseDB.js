@@ -27,9 +27,3 @@ const firebaseConfig = {
 //   }
 
 export { firebase, Auth, database};
-
-// function firebaseDb() {
-//   return <App />;
-// }
-
-// export default firebaseDb;
