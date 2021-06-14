@@ -82,6 +82,24 @@ The major objective of this project is
 ![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/medicine%401x.png)
 
 ---
+##Project System
+
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/01.png)<br />
+:pushpin:The login page: user can text the email and password and prees at login button to login in the system. if user does not account yet, user can tab at textbutton ('sign up') <br />
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/02.png)<br />
+:ppushpin:The signupp page: user can text emaii and paword and press sign up to register in the system. user can also press at close button to go back at login page <br />
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/03.png)<br />
+:ppushpin:Home screen page: user can press logout button to logout from system and go back to login page. At the buttom, there is navigation tabs that user can go to other pages. <br />
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/04.png)<br />
+:ppushpin:Patient list page: In this page, the system display all patient list and user can press any patient to navigate to userdetail screen and user can press "Add" button" to add patient<br/>
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/05.png)<br />
+:ppushpin:Add patient page:user can fill the information about patient and press at "Add patient" button to add new patient <br/>
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/06.png)<br />
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/07.png)<br />
+:ppushpin:Appointment page: in this page, the system display appointmet list of user and user can press any appointment to see the detail<br />
+![prototype](https://github.com/Hafiz24498/MobilApp_project/blob/main/imgs/08.png)<br />
+:ppushpin:patient detail page: user can see the detail of patient. In addition, user can text to change information of patient and press "update patient" button
+--
 ## Challenges
 
 Challenge that we faced in this project is how connect with firebase that is take our time to debug the problem that we faced
